@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icones/wine_store.png"/>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Wine Store</title>
+</head>
+<body>
+
+
+<div class="popup" id="popup">                                                                           <!--ESSE E MEU POPUP-->       
+    <h2>Você tem mais de 18 anos?</h2>
+    <h4 id="pop4">Os produtos oferecidos nessa loja destinam-se<br>somente para adultos.</h4>
+    <h3 id="sim"></h3>
+    <h3 id="nao"></h3>
+    <div class="botoes">
+    <button onclick="verificarIdade('sim')">Sim</button>
+    <button onclick="verificarIdade('nao')">Não</button>
+    <h6 id="pop6">caso não seja de maior, volte quando for</h6>
+    </div>
+</div>
+<div class="overlay" id="overlay"></div>                                                               <!-- imagem escura no pop up -->
+
+
+<div class="rodape1">
+<p>FRETE GRÁTIS PARA TODO BRASIL EM COMPRAS ACIMA DE R$ 99,00!</p>                                       <!--Roda pe fixo-->
+</div>
+
+<!--TITULO-->
+
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home"><img class="logo" src="./img/icones/wine_store.png"></a></li>                      <!--Link para home e Imagem da navbar-->
+            <li><a href="#home">Home</a></li>                                                                   <!--Botao para Home-->
+            <li><a href="#produtos">Produtos</a></li>                                                           <!--Botao para Produtos-->
+            <li><a href="#contato">Contato</a></li>                                                             <!--Botao para Contato-->       
+            <li><a href="#carrinho"><img class="carrinho_compras" src="./img/icones/carrinho_compras.png"></a></li>    <!--Link para Carrinho e imagem Carrinho-->
+        </ul>
+    </nav>
+</header>
+
+<div class="banner1">
+    <img src="img/banners/banner-tinto.png" alt="Banner">                                                                     <!--BANNER 1-->
+</div>
+
+
+<section class="produtos">
+    <div class="produto">
+        <img src="img/produtos/vinho_organico_tinto_guardian.jpg" alt="produto 1">                                             <!--1 PRODUTO-->
+        <h2>Vinho Orgânico Tinto Guardian</h2>
+        <p>Cabernet Sauvignon</p>
+        <span class="preço">R$ 79,99</span>
+        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto">
+        <img src="img/produtos/vinho_natural_tinto_del_leste_matias.jpg" alt="produto 2">                                       <!--2 PRODUTO-->
+        <h2>Vinho Natural Tinto Del Leste Matias Morcos</h2>
+        <p>Blend, 2022</p>
+        <span class="preço">R$ 155,90</span>
+        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto">
+        <img src="img/produtos/vinho_organico_tinto_gran_reserva_guardian_de_los_vinedos.jpg" alt="produto 3">                          <!--3 PRODUTO-->
+        <h2>Vinho Orgânico Tinto Gran Reserva</h2>
+        <p>Merlot, 2019</p>
+        <span class="preço">R$ 188,00</span>
+        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto">
+        <img src="img/produtos/vinho_organico_branco_reserva_guardian_de_los_vinedos_sauvignon.jpg" alt="produto 4">                              <!--4 PRODUTO-->
+         <h2>Vinho Orgânico Branco</h2>
+        <p>Sauvignon Blanc, 2022</p>
+        <span class="preço">R$ 110,90</span>
+         <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+    </div>                                
+</section>
+
+<br>                                                                                                                       <!--DAR UM ESPAÇO ENTRE OS BANNERS-->
+
+<div class="banner2">
+    <img src="img/banners/banner-consumidor-frete-gratis.png" alt="Banner">                                                                     <!--BANNER 2-->
+</div>
+
+<br>                                                                                                                                 <!--separaçao-->
+
+<div class="mesconsumidor">
+    <h1>Mês Do Consumidor</h1>
+     <h2>Ate 43% De <strong>DESCONTO</strong></h2>                                                             <!--Mes do consumidor-->
+</div> 
+
+<section class="produtos">
+    <div class="produto">
+        <img src="img/produtos/vinho_tinto_natural_tinto_de_rulo_pipeno.jpg" alt="produto 1">                                          <!--1 PRODUTO-->
+        <h2>Vinho Tinto Natural Tinto de Rulo</h2>
+        <p>Pipeño, 2020</p>
+        <span class="preço"><del>de R$ 129,00</del><br>Por:R$ 99,90<br>R$ 84,92 à vista com desconto Pix</span>
+        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+    </div>
+       
+    <div class="produto">
+        <img src="img/produtos/vinho_organico_branco_reserva_guardian_de_los_vinedos_chardonnay.jpg" alt="produto 2">                       <!--2 PRODUTO-->
+        <h2>Vinho Orgânico Branco</h2>
+        <p>Chardonnay, 2021</p>
+        <span class="preço"><del>de R$ 169,00</del><br>Por:R$ 110,90<br>R$ 94,27 à vista com desconto Pix</span>
+        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+    </div>
+    
+    <div class="produto">
+        <img src="img/produtos/vinho_organico_tinto_reserva_guardian_de_los_vinedos_carmenere.jpg" alt="produto 3">                  <!--3 PRODUTO-->
+        <h2>Vinho Orgânico Reserva</h2>
+        <p>Carmenere, 2021</p>
+        <span class="preço"><del>de R$ 169,00</del><br>Por:R$ 110,90<br>R$ 94,27 à vista com desconto Pix</span>
+        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+    </div>
+    
+    <div class="produto">
+        <img src="img/produtos/vinho_organico_rose_guardian_de_los_vinedos_merlot.jpg" alt="produto 4">                           <!--4 PRODUTO-->
+        <h2>Vinho Rose Guardian De Los Vinedos</h2>
+        <p>Merlot, 2023</p>
+        <span class="preço"><del>de R$ 129,00</del><br>Por:R$ 87,90<br>R$ 74,72 à vista com desconto Pix</span>
+        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+    </div>                                
+</section>
+
+<br>
+
+<footer id="final">
+    <img src="./img/icones/wine_store.png">
+    <p>&copy; 2024 Wine Store. Todos os direitos reservados.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

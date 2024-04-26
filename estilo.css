@@ -1,0 +1,254 @@
+                                                                             /* resetando as configurações padrões */
+* {
+    margin: 0; /* zerando a margem */
+    padding: 0; /* zerando o padding */
+    box-sizing: border-box; /* limpando bordas */
+  }
+
+                                                                                  /*tratando a tag body*/
+body {
+    background-color: #f3f3f3;
+    font-family: 'Arial';
+}
+
+                                                                      /* DAQUI PARA BAIXO SAO TODAS AS MINHAS CONFIG DO POPUP*/
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(236, 236, 236);
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9999; /* Ajusta a camada do pop-up para ficar acima do overlay */
+}
+
+#pop4 {
+    color: #ff004c;
+    padding: 10px                /* deixa um espaço de 10px tanto para baixo quanto para cima */
+}
+
+#pop6 {
+    margin-top: 10px;           /* deixa um espaço de 10px somente para cima */
+}
+
+#sim{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 0%;
+    float: left;
+    font-size: 10px;
+   
+}
+
+#nao{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 0%;
+    float: right;
+    font-size: 10px;
+
+}
+
+                                                                                    /*Estilização dos botões*/
+.botoes button {
+    margin: center;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff004c;
+    transition: background-color 0.5s ease; /*Transição de mudança de cor de forma lima*/
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.botoes button:hover {
+    background-color: #a70132;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.938);                                             /* Cor de fundo escura com transparência */
+    z-index: 9998;                                                                      /* Ajusta a camada do overlay para ficar abaixo do pop-up */
+}
+
+
+                                                                                                /* AQUI SERA MEU RODA PE INICIAL */
+
+
+.rodape1 {
+    position: fixed; /* Define a posição fixa */
+    top: 0; /* Alinha o rodapé no topo da página */
+    width: 100%; /* Define a largura total */
+    background-color: #E79D48; /* Cor de fundo Amarela/Laranja */
+    color: #ffffff; /* Cor do texto branca */
+    font-weight: bold;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px 0; /* Adiciona um espaçamento interno de 10px acima e abaixo */
+}
+
+                                                                                             /*TITULO DA VINHARIA*/
+
+/*.titulo1 {
+    text-align: center; /* Centraliza o título 
+    margin-top: 39px; /* Adiciona uma margem superior para separar do rodapé 
+    background-color: #D2B48C;
+} 
+*/
+
+
+.banner1 img {
+    max-width: 100%; /* Define a largura máxima como 100% da largura da tela */
+    height: auto; /* Mantém a proporção original da imagem */                                /*MEU BANNER INICIAL*/
+    margin: auto;                                                              
+}
+
+
+.titulo1 h1 {
+    color: #ffffff; /* Cor do texto (vermelho vinho) */
+}
+
+
+nav ul {
+    margin-top: 39px; /* Margin para separar a navbar do rodapé flutuante fixo*/
+    padding: 10px;
+    background-color: #BB1E47;
+    width: 100%;
+    height: 70%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Comando para separar de forma igual os elementos dentro da navbar*/
+}
+
+                                            /*Estilização da logo */
+.logo {
+    margin-top: 10%;
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+
+nav ul li {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: initial;
+    transition: font-size 0.5s ease; /*Transição limpa de mudança de tamanho*/
+    margin-left: 20px;
+}
+
+nav ul li a:hover {
+    font-size: 25px; /*Aumenta o tamanho da fonte quando o cursor está em cima */
+    font-weight: bold; /*Deixa o texto em Negrito quando o cursos está em cima */
+}
+
+.carrinho_compras {
+    width: 50px;        /* Tamanho do icone do carrinho */
+    height: auto;      /* Calcula automaticamente a altura da imagem */
+    margin-left: auto; /* Move o carrinho para a direita */
+    cursor: pointer;    /* Faz o cursor poder clicar na Imagem */
+    transition: width 0.3s ease; /*Transição limpa de mudança de tamanho*/
+}
+
+.carrinho_compras:hover {
+    width: 55px; /* Aumenta o tamanho com uma transição limpa */
+}
+
+
+/* Estilizando os produtos */
+.produtos {
+    display: flex; /* Exibe os produtos em linha */
+    flex-wrap: wrap; /* Permite que os produtos quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os produtos horizontalmente */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.produto {
+    background-color: #ffffff; /* Cor de fundo do produto */
+    border: 2px solid #BB1E47; /* Borda do produto */
+    border-radius: 10px; /* Arredondamento da borda */
+    padding: 20px; /* Espaçamento interno */
+    margin: 10px; /* Margem externa */
+    text-align: center; /* Alinhamento do texto */
+    width: 200px; /* Largura do produto */
+}
+
+.produto img {
+    max-width: 100%; /* Imagem responsiva */
+}
+
+.produto h2 {
+    margin-top: 10px; /* Espaçamento superior do título */
+}
+
+.produto .preco {
+    font-weight: bold; /* Estilo do texto */
+    color: #333; /* Cor do texto */
+    margin-top: 50px; /* Espaçamento superior */
+}
+
+.adicionar-carrinho{
+    background-color: #BB1E47; /*Cor de fundo do botao */
+    color: white; /*Cor do texto dentro do botao */
+    margin-top: 30px; /*Cria uma margem no topo dentro do elemento */
+    padding:10px 20px;  /*Cria a margem dentro do elemento do botao */
+    border: none; /*Remove a borda do botao*/
+    border-radius: 20px; /*Arredonda a Borda em volta do produto */
+    cursor: pointer; /*Faz o botao ser clicavel */
+    transition: background-color 0.5s ease, color 0.5s ease; /*Transicao limpa de mudança de cor quando o cursor esta em cima */
+}
+
+.adicionar-carrinho:hover {
+    background-color: #a70132; /* Primeira cor da transicao */
+    background-color: #E79D48; /*Segunda cor da transicao */
+}
+
+/* Estilizando o rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+}
+
+.banner2 img {
+    max-width: 100%; /* Define a largura máxima como 100% da largura da tela */
+    height: auto; /* Mantém a proporção original da imagem */                                              /*MEU BANNER 2*/
+}
+
+.mesconsumidor {
+    margin: auto;
+    width: 720px; /* Definindo a largura da imagem */
+    height: 70px; /* Definindo a altura da imagem */ 
+    background-color: #ff004c; /* Cor de fundo vermelha */                                                               /*mes do consumiudor*/
+    color: #FFFFFF; /* Cor do texto branca */
+    text-align: center; /* Alinha o texto ao centro */
+    border-radius: 50px; /* Arredondamento da borda */
+}
+
+
+#final {
+    background-color: #a7163c;
+    color: #fff;                                                                                                /*FINAL DA MINHA PAGINA*/
+    padding: 30px;
+    text-align: center;
+}
+footer img{
+    width: 80px;                                                                                                  /*AJUSTA TAMANHO DA LOGO NO FINAL DA PAGINA*/
+}
